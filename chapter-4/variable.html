@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+        .bag
+        {
+            margin: 100px;
+        }
+        .but-1
+        {
+            background-color: lightgreen;
+            border-radius: 0.5rem;
+            padding: 5px 20px;
+            border: none;
+            font-weight: 700;
+        }
+        .but-2
+        {
+            border-radius: .5rem;
+            padding: 5px 40px;
+            font-weight: 700;
+        }
+        .but-3
+        {
+            background-color: lightgreen;
+            border-radius: 0.5rem;
+            padding: 5px 20px;
+            border: none;
+            font-weight: 700;
+        }
+        h1
+        {
+            margin-left: 100px; 
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="bag">
+        <button class="but-1" type="button" onclick="increment1()">Add to Bag</button>
+        <button class="but-2" type="button" onclick="decrement()">MOVE TO WISHLIST</button>
+        <button class="but-3" type="button" onclick="increment2()">Add 1+1 sale item</button>
+    </div>
+    <h1 id="statment">Your Bag has 0 items.</h1>
+
+<script>
+    /*    
+    let welcomeName="Hello World";
+    console.log(welcomeName);
+    console.log(typeof welcomeName);
+    */
+    /*
+    let bagPrice=(15599-(10/100*15599))-272;
+    let jeansPrice=(2499-(41/100*2499))-29;
+    let bagValue=Math.round((jeansPrice+bagPrice+25+20)*118/100);
+    let bagSummary=`Your final Myntra bag price is ₹- ${bagValue}`;
+    console.log(bagSummary);
+    */
+
+    let cartQuantity=0;
+
+    function increment1()
+    {
+    document.getElementById('statment').innerText=`Your Bag has ${++cartQuantity} items.`;
+    }
+    function decrement()
+    {
+    document.getElementById('statment').innerText=`Your Bag has ${--cartQuantity} items.`;
+    }
+    function increment2()
+    {
+    cartQuantity+=2;
+    document.getElementById('statment').innerText=`Your Bag has ${cartQuantity} items.`;
+    }
+
+
+</script>
+</body>
+</html>
+
+
+
+

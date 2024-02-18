@@ -1,0 +1,109 @@
+#
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+}
+.calculator
+{
+    /* display: flex;
+    justify-content: center; */
+    width: 30rem;
+    height: 45rem;
+    border: 0.1rem solid #777;
+    border-radius: .5rem;
+}
+
+.display
+{
+    display: flex;
+    justify-content: center;
+}
+
+#screen
+{
+    border: 0.2px solid #777;
+    border-radius: 0.2rem;
+    width: 90%;
+    height: 100px;
+}
+
+.but1
+{
+    /* border: 0.2px solid black; */
+    width: 70%;
+    height: 70px;
+    margin: 20px 70px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.but
+{
+    
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+    border: 0.2px solid black;
+    border-radius: 0.3rem;
+    width: 25%;
+    height: 70px;
+}
+
+.but:hover
+{
+    background-color: #5a5a5a;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    .but
+    {
+        width: 15%;
+        height: 40px;
+        font-weight: 400;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .calculator
+    {
+    width: 20rem;
+    height: 30rem;
+    border: 0.1rem solid #777;
+    border-radius: .5rem;
+    }
+
+    #screen
+    {
+
+    width: 50%;
+    height: 80px;
+    }
+    .but1
+    {
+    width: 50%;
+    height: 50px;
+    margin: 8px 30px;
+    gap: 7px;
+    }
+    .grid
+    {
+        margin-left: 20%;
+    }
+    .bot
+    {
+        margin-left: 25%;
+    }
+
+
+    
+}

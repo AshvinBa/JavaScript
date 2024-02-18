@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Variable</title>
+    <style>
+        .soham
+        {
+            text-align: center;
+            margin: 100px;
+        }
+        .but-1
+        {
+            background-color: lightgreen;
+            border-radius: 0.5rem;
+            padding: 5px 20px;
+            border: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="soham">
+    <h1>Hello Friend</h1>
+    <h2>My Name is: <b id="name"></b></h2> 
+    <button type="button" class="but-1" onclick="Display()">Click Me</button>
+    </div>
+    <script>
+        function Display()
+        {
+            let name=prompt("Enter the Name");
+            document.querySelector("#name").innerText=name;
+        }
+
+        const GSTpercentage=5;
+        let cartValue=Math.round(((15599-(10/100*15599)) - 272 + (2499 - (41/100*2499)) -29 + 25 + 20)*(100+GSTpercentage)/100);
+        console.log(cartValue);
+
+    </script>
+</body>
+</html>
