@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <style>
+        body
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Bat Ball Stump Game</h1>
+
+    <!-- Bat Button -->
+    <button type="button" onclick="generateComputerChoice()">Bat</button>
+
+    <!-- Ball Button -->
+    <button type="button" onclick="generateComputerChoice()">Ball</button>
+
+    <!-- Stump Button -->
+    <button type="button" onclick="generateComputerChoice()">Stump</button>
+
+<script>
+function generateComputerChoice()
+{
+    var randomNumber=Math.random() * 3;
+    let ComputerChoice='';
+    if(randomNumber > 0 && randomNumber <= 1) 
+    {
+        ComputerChoice='Bat';
+        console.log('Your choice is Bat and computer choice is Bat');
+        alert('Game is Tie.');
+    }
+    else if(randomNumber > 1 && randomNumber <=2)
+    {
+        ComputerChoice='Ball';
+        console.log('Your choice is Bat and computer choice is Ball');
+        alert('You Won');        
+    }
+    else if(randomNumber > 2 && randomNumber <=3)
+    {
+        ComputerChoice='stump';
+        console.log('Your choice is Bat and computer choice is Stump');
+        alert('Computer Won.');
+    }
+}        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body>
+    <h1>This is New.</h1>
+    <h2>If else Concept</h2>
+
+    <p>You can Drive or Not: <b class="ans">Hi</b></p> 
+
+    <script>
+        let age=60;
+
+        if(age>20 && age<50)
+        {
+            document.querySelector('.ans').innerText="Yes! you can Drive..";
+            console.log("Yes! you can Drive.")
+        }
+        else if(age<10)
+        {
+            document.querySelector('.ans').innerText="No! you can't Drive.";
+            console.log("No! you can't Drive.")
+        }
+        else
+        {
+            document.querySelector('.ans').innerText="No! Sorry you can't drive because of yor age.";
+            console.log("No! Sorry you can't drive because of you age.")
+        }
+    </script>
+</body>
+</html>
