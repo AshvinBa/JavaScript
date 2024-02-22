@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbuilt Function. </title>
+</head>
+<body>
+    <h1>The Inbuilt functions in JavaScript Object Notation.</h1>
+
+<script>
+
+/*
+    let product = {
+        name: 'T-shirt',
+        price: 789,
+        rating: {
+            stars: 4.5,
+            noOfReview: 500,
+        },
+    };
+*/
+/*
+    console.log(product);
+    console.log(typeof product);
+    console.log('------------------------------');
+
+    let str = JSON.stringify(product);
+    console.log(str);
+    console.log(typeof str);
+    console.log('------------------------------');
+
+    let newProduct = JSON.parse(str);
+    console.log(typeof newProduct);
+    console.log(typeof str);
+    console.log(newProduct);
+    console.log('------------------------------');
+*/
+
+/*  localStorage.setItem('Name-1','Ashvin.');
+    localStorage.setItem('Name-2','Sudhir.');
+    localStorage.setItem('Name-3','Bari.');
+    console.log(localStorage.getItem('Name-1'));
+    console.log(localStorage.getItem('Name-2'));
+    console.log(localStorage.getItem('Name-3'));
+*/
+
+let product = {
+    name: 'T-shirt',
+    price: 789,
+    rating: {
+        stars: 4.5,
+        noOfReview: 500,
+    },
+};
+    localStorage.setItem('product',JSON.stringify(product));
+    console.log(localStorage.getItem('product'));
+
+
+    
+
+
+</script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

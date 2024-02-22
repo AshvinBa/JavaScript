@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Exercise. </title>
+</head>
+<body>
+    <h1>1. Showing the products of Myntra.</h1>
+
+<script>
+
+    /*
+    let product = 
+    {
+        quantity: 10,
+        price: 500,
+        size: 28,
+        color: 'Black',
+        'delivery-time': 'same day-delivery',
+    };
+    let copyProduct=product;
+    console.log(product);
+    copyProduct.color='Blue';
+    console.log(product);
+    copyProduct.color='Red';
+    console.log(product);
+    //copyProduct.['delivery-time']='another day';
+    console.log(product[`delivery-time`]);
+    console.log(`1) Product:${product.quantity} , 2) Price:${product.price} , 3) Size:${product.size} , 4) color:${product.color}`);
+
+    let object = {
+        message:'good job',
+        status: 'complate',
+    };
+    console.log("--------------------------------------------------------------------------");
+
+    console.log(object);
+    let {message, status}=object;
+    console.log(message);
+    console.log(status);
+
+    */
+
+    
+
+    function isIdentical(product1, product2)
+    {
+        if(typeof product1 !== 'object' || typeof product2 !== 'object')
+        {
+            console.warn('Parameter passed was not an object.');
+            return false;
+        }
+
+        if(product1 == product2)
+        {
+            return true;
+        }
+
+        if(product1.quantity === product2.quantity &&
+        product1.price === product2.price &&
+        product1.size === product2.size)
+        {
+            return true;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+    let product1 = 
+    {
+        quantity: 10,
+        price: 500,
+        size: 28,
+        color: 'Black',
+        'delivery-time': 'same day-delivery',
+    };
+
+    let product2 = 
+    {
+        quantity: 10,
+        price: 500,
+        size: 28,
+        color: 'Black',
+        'delivery-time': 'same day-delivery',
+    };
+
+    let product3 = 
+    {
+        quantity: 10,
+        price: 500,
+        size: 28,
+        color: 'Black',
+        'delivery-time': 'same day-delivery',
+    };
+
+    console.log(isIdentical(product2,product1));
+    console.log(isIdentical(product2,product3));
+    //console.log(isIdentical(product2,''));
+    // console.log(isIdentical(product3,'object'));
+    
+</script>
+    
+</body>
+</html>

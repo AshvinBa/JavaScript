@@ -19,7 +19,29 @@
         /* if we want to change the name of company*/
         /*product.company='Banana';
         console.log(product.company);*/
-        console.log(product['item-name']);
+        // console.log(product['item-name']);
+        let product1={
+            company: 'Mango',
+            price: 851,
+            'item-name': 'T-shirt',
+            displayPrice: function()
+            {
+                console.log(`The Price of Product is: ₹ ${product1.price}`);
+            }
+        };
+        product1.displayPrice();
+
+        let product2={
+            company: 'Mango',
+            price: 81,
+            'item-name': 'T-shirt',
+            displayPrice: function()
+            {
+                console.log(`The Price of Product is: ₹ ${this.price}`);
+            }
+        };
+        product2.displayPrice();
+
     </script>
 </body>
 </html>

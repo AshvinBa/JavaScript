@@ -25,6 +25,18 @@
     <button type="button" onclick="generateComputerChoice()">Stump</button>
 
 <script>
+
+    let score={
+        win:0,
+        lost:0,
+        tie:0,
+        displayScore: function()
+        {
+            return `won ${score.win}, lost${score.lost}, tie ${score.tie} .`;
+        }
+    };
+
+
 function generateComputerChoice()
 {
     var randomNumber=Math.random() * 3;
@@ -49,6 +61,6 @@ function generateComputerChoice()
     }
 }        
 
-    </script>
+</script>
 </body>
 </html>
