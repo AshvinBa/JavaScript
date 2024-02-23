@@ -13,6 +13,7 @@
     <div class="box">
         <h1>Play Cricket</h1>
         <p class="box2">
+
             <button onclick="
             let computerChoice = generateComputerChoice();
             let resultMsg = getResult('Bat',computerChoice);
@@ -34,7 +35,13 @@
             <button onclick=" localStorage.clear()
             resetScore();
             ">Reset</button>
+
         </p>
+        <div class="result1">The Result is: <p class="res">
+            <h1 id="user-move"></h1>
+            <h1 id="computer-move"></h1>
+            <h1 id="result"></h1>
+        </p></div>
     </div>
 
     <script>
@@ -42,6 +49,7 @@
         let scoreStr = localStorage.getItem('Score');
         let score;
         resetScore(scoreStr);
+
         function resetScore(scoreStr)
         {
             score = scoreStr ? JSON.parse(scoreStr) : {
@@ -55,9 +63,6 @@
             }
         }
 
-
-
-        score;
         if(scoreStr !== undefined)
         {
             score = JSON.parse(scoreStr);
@@ -69,7 +74,7 @@
             lost: 0,
             tie: 0,
         };
-    }
+        }
 
 
         score.displayScore = function()
@@ -150,15 +155,12 @@
 
         function showResult(userMove,computerMove,result)
         {
-            //console.log(score);
-            
-            localStorage.setItem('score',JSON.stringify(score));
+            //localStorage.setItem('score',JSON.stringify(score));
             alert(`You have Chosen ${userMove}. Computer choice is ${computerMove} 
             ${result}
             
             ${score.displayScore()}`);
         }
-
 
     </script>
 </body>

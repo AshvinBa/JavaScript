@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON Practice-Set</title>
+    <style>
+        #my-button
+        {
+            padding: 5px 20px;
+            border: none;
+            background-color: aquamarine;
+            font-weight: 700;
+            border-radius: 0.3rem;
+        }
+        .js-odd
+        {
+            background-color: chocolate;
+        }
+        .js-even
+        {
+            background-color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>JSON PRACTICE-SET</h1>    
+    
+    <div class="container">
+        <h1>Time is: </h1>
+        <h1>
+            <p class="con-ans"></p>
+        </h1>
+        <button id="my-button" type="button" onclick="press()">0</button>
+        
+    </div>
+
+    <script>
+        // 1) Display Good Morning,afternoon and night as per current time.
+        function displayTime(name)
+        {
+        let src=new Date();
+        let time = src.getHours();
+        
+        if(time >= 1 && time <= 11)
+        {
+            document.querySelector('.con-ans').innerHTML = `Good Morning. ${name}`;
+        }
+        else if(time > 11 && time <= 16)
+        {
+            document.querySelector('.con-ans').innerHTML = `Good Afternoon. ${name}`;
+        }
+        else if(time > 16 && time <= 19)
+        {
+            document.querySelector('.con-ans').innerHTML = `Good Evening. ${name}`;
+        }
+        else if(time >19 && time < 24)
+        {
+            document.querySelector('.con-ans').innerHTML = `Good Night. ${name}`;
+        }
+    }
+    //let name=prompt("Insert Name: ");
+        //displayTime(name);
+        
+       // 3) Prees no. of time.
+        /*let cnt=0;
+
+        function press()
+        {             
+            document.getElementById('#my-button').style.color="black";
+            let button=document.querySelector('#my-button')
+            document.querySelector('.press').innerHTML = ++cnt;
+            if(cnt % 2 === 0)
+            {
+                button.classList.remove('js-odd');
+                button.classList.add('js-even');                
+            }
+            else{
+                button.classList.remove('js-even');
+                button.classList.add('js-odd');
+            }
+            
+        }*/
+
+        let cnt=0;
+        function press()
+        {
+            document.querySelector('#my-button').innerHTML=++cnt;
+
+            if( cnt % 2 == 0 )
+            {
+                document.querySelector('#my-button').style.color="Yellow";
+                document.querySelector('#my-button').style.backgroundColor="Red";
+            }   
+            else 
+            {
+                document.querySelector('#my-button').style.color="Red";
+                document.querySelector('#my-button').style.backgroundColor="Yellow";
+            }                   
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+
+    <h1>Todays Date: <p class="Date"></p></h1>
+    <div class="my-div"><h1>This is the Div.</h1></div>
+
+    <script>
+        /*
+        let date = new Date();
+        document.querySelector(".Date").innerHTML=date;
+        console.log("Time " + date.getTime());
+        console.log("Year " +date.getFullYear());
+        console.log("Day " +date.getDay());
+        console.log("Hours " +date.getHours());
+        console.log("Minutes " +date.getMinutes());
+        console.log("Second " +date.getMilliseconds());
+        */
+        let button = document.createElement('Button');
+        button.innerText='click Me';
+        document.querySelector('.my-div').appendChild(button);
+        document.querySelector('.my-div').removeChild(button);
+    </script>
+    
+    
+</body>
+</html>

@@ -31,6 +31,11 @@
             showResult('Stump', computerChoice, resultMsg);
             ">Stump</button>            
         </p>
+        <h1 id="user-move"></h1>
+        <h1 id="comp-move"></h1>
+        <h1 id="result"></h1>
+        <h1 id="score"></h1>
+
     </div>
 
     <script>
@@ -118,13 +123,18 @@
 
         function showResult(userMove,computerMove,result)
         {
+
             console.log(score);
-            alert(`You have Chosen ${userMove}. Computer choice is ${computerMove} 
+            document.querySelector('#user-move').innerText = `You have Chosen ${userMove}`;
+            document.querySelector('#comp-move').innerText = `You have Chosen ${computerMove}`;
+            document.querySelector('#result').innerText = result;
+            document.querySelector('#score').innerText = score.displayScore();
+            /*alert(`You have Chosen ${userMove}. Computer choice is ${computerMove} 
             ${result}
             
             ${score.displayScore()}`);
+            */
         }
-
 
     </script>
 </body>
