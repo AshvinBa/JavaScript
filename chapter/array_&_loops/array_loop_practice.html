@@ -4,20 +4,59 @@
     <title>Array and Loop</title>
 </head>
 <body>
+    <h1>The Array and Loop</h1>
     <script>
+        /*
         let arr=[5,6];               //create array.
         console.log(arr);
         arr.push(7);                 //Push 7 in array.
         console.log(arr);
+        arr.unshift(4);              // To push 4 in starting.
+        console.log(arr);      
         console.log(arr[1]);         // select perticular array.
         let a=arr;                   // copy array.
         console.log(a);
+        */
 
-        let i=1;                     // print prime numbers;
-        while(i!=6)
+        /*
+        function arrCopy(arr1)
         {
-            console.log(i++);
+            return arr1.slice(0,arr1.length);
         }
+
+        let arr1=[4,5,6,7];
+        let arr2=arrCopy(arr1);
+        //arr2[0]=null;
+        console.log(arr1);
+        console.log(arr2);
+        */
+
+        
+        function isPrime(num)
+        {
+            for(let i=2;i<=num;i++)
+            {
+                if(num%i===0)
+                {
+                    return false;                    
+                }
+            }
+            return true;
+        }
+
+        let num=2;
+        let cnt=0;
+
+        while(cnt<6)
+        {
+            if(isPrime(num))
+            {
+                console.log(num);
+                cnt++;
+            }
+            num++;
+        }
+        
     </script>   
 </body>
 </html>
