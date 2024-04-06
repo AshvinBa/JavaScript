@@ -7,6 +7,8 @@ const items = [
         original_price: 1045,
         current_price: 606,
         discount_percentage: 42,
+        return_period: 14,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.5,
             count: 1400,
@@ -20,6 +22,8 @@ const items = [
         original_price: 2599,
         current_price: 1507,
         discount_percentage: 42,
+        return_period: 24,
+        delvery_date: '11 Aug 2024',
         rating: {
             stars: 4.3,
             count: 24,
@@ -33,6 +37,8 @@ const items = [
         original_price: 1599,
         current_price: 495,
         discount_percentage: 69,
+        return_period: 10,
+        delvery_date: '5 oct 2024',
         rating: {
             stars: 4.1,
             count: 249,
@@ -46,6 +52,8 @@ const items = [
         original_price: 1999,
         current_price: 999,
         discount_percentage: 60,
+        return_period: 18,
+        delvery_date: '30 oct 2024',
         rating: {
             stars: 5.0,
             count: 0,
@@ -59,6 +67,8 @@ const items = [
         original_price: 1399,
         current_price: 489,
         discount_percentage: 65,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 3500,
@@ -72,6 +82,8 @@ const items = [
         original_price: 14995,
         current_price: 14995,
         discount_percentage: 0,
+        return_period: 1,
+        delvery_date: '17 oct 2024',
         rating: {
             stars: 0.0,
             count: 0,
@@ -85,6 +97,8 @@ const items = [
         original_price: 1599,
         current_price: 639,
         discount_percentage: 60,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 388,
@@ -98,6 +112,8 @@ const items = [
         original_price: 285,
         current_price: 142,
         discount_percentage: 50,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 5200,
@@ -111,6 +127,8 @@ const items = [
         original_price: 285,
         current_price: 142,
         discount_percentage: 50,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 5200,
@@ -124,6 +142,8 @@ const items = [
         original_price: 285,
         current_price: 142,
         discount_percentage: 50,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 5200,
@@ -137,6 +157,8 @@ const items = [
         original_price: 285,
         current_price: 142,
         discount_percentage: 50,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 5200,
@@ -150,6 +172,8 @@ const items = [
         original_price: 285,
         current_price: 142,
         discount_percentage: 50,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 5200,
@@ -163,6 +187,8 @@ const items = [
         original_price: 285,
         current_price: 142,
         discount_percentage: 50,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 5200,
@@ -176,6 +202,8 @@ const items = [
         original_price: 285,
         current_price: 142,
         discount_percentage: 50,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 5200,
@@ -189,6 +217,8 @@ const items = [
         original_price: 285,
         current_price: 142,
         discount_percentage: 50,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 5200,
@@ -202,6 +232,8 @@ const items = [
         original_price: 285,
         current_price: 142,
         discount_percentage: 50,
+        return_period: 20,
+        delvery_date: '10 oct 2024',
         rating: {
             stars: 4.2,
             count: 5200,
