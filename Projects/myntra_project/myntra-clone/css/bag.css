@@ -138,9 +138,12 @@
   .footer_column a
   {
     text-decoration: none;
-    color: black;
+    color: #192039;  
   }
   .footer_column h3
   {
     margin: 10px 0px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #282c3f;
   }
