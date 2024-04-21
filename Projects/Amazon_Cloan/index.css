@@ -1,0 +1,26 @@
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 200px;
+    min-width: 500px;
+    border: 0.2ps solid black;
+    background-color: pink;
+}
+.inner-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+    min-width: 300px;
+    background-color: rgb(225, 108, 128);
+}
+.time
+{
+    color: black;
+}
