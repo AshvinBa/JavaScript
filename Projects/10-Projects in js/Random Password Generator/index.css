@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    height: 100vh;
+}
+
+.box
+{
+    min-width: 400px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+    padding: 10px;
+    background: #2980b9;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+#pass-box
+{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+.row
+{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;  /* It gives the available space.*/
+    color: white;
+    font-size: 20px;
+}
+
+label
+{
+    user-select: none;
+}
+
+#btn
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    outline: 0;
+    border: 0;
+    background-color: #34495e;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

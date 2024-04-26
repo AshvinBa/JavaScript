@@ -59,7 +59,6 @@ const loadQuestion = () => {
     }
     reset();
     const data = questios[index];
-    // console.log(data);
     queBox.innerText= `${index+1}) ${data.que}`; 
     optionInputs[0].nextElementSibling.innerText = data.a;
     optionInputs[1].nextElementSibling.innerText = data.b;
@@ -116,13 +115,4 @@ const endQuiz = () =>
     `
 }
 
-
 loadQuestion();
-
-
-
-
-
-
-
-
