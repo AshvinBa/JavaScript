@@ -52,6 +52,7 @@ let right=0,wrong=0;
 
 const queBox=document.getElementById("quesBox");
 const optionInputs = document.querySelectorAll('.Options');
+
 const loadQuestion = () => {
     if(index===total)
     {
@@ -82,6 +83,7 @@ const submitQuiz = () =>{
     return;
 }
 
+
 const getAnswer = () =>
 {
     let answer;
@@ -111,6 +113,7 @@ const endQuiz = () =>
     <div style="text-align:center">
     <h3>Thank You for Playing the quiz.</h3>
     <h2>${right}/${total} are correct.<h2/>
+    <h1 style="font-size:50px;">Test Completed</h1> 
     </div>
     `
 }

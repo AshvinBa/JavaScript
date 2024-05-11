@@ -9,7 +9,6 @@
     min-height: 100vh;
     background-color: #81ecec;
     display: flex;
-    /* flex-grow: initial; */
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -19,7 +18,7 @@
     width: 400px;
     height: 400px;
     background-color: white;
-    margin: 15px;
+    margin: 35px 10px;
 }
 
 .tool

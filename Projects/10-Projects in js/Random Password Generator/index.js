@@ -11,9 +11,10 @@ const lowerInput = document.getElementById("lower-case");
 const numberInput = document.getElementById("numbers");
 const symbolInput = document.getElementById("symbols");
 
-const getRandomData = (dataSet) => {
+const getRandomData = (dataSet) => {    /* To get the random data */
     return dataSet[Math.floor(Math.random() * dataSet.length)]
 }
+
 
 const generatePassword = (password = "") => {
     if(upperInput.checked)
@@ -50,7 +51,7 @@ generatePassword();
 function truncateString(str,num)
 {
     if(str.length > num){
-        let subStr = str.substring(0,num);
+        let subStr = str.substring(0,num);   /* It gives the size of password as per decided value. */
         return subStr;
     }
     else
@@ -58,5 +59,4 @@ function truncateString(str,num)
         return str;
     }
 }
-
 generatePassword();
