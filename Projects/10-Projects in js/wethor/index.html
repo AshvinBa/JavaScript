@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        #weather {
+            margin-top: 20px;
+        }
+        #weather div {
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form id="weatherForm">
+        <label for="search">Enter city name:</label>
+        <input type="text" id="search" name="search">
+        <button type="submit">Search</button>
+    </form>
+    <div id="weather"></div>
+
+    <script>
+        const weather = [
+            { 'city': "Jalgaon", 'temp': "42℃", 'wea': "Sunny" },
+            { 'city': "Bhusawal", 'temp': "43℃", 'wea': "Sunny" },
+            { 'city': "Dhule", 'temp': "41℃", 'wea': "Sunny" },
+            { 'city': "Nashik", 'temp': "37℃", 'wea': "Cloudy" },
+            { 'city': "Nandurbar", 'temp': "40℃", 'wea': "Clear" },
+            { 'city': "Mumbai", 'temp': "30℃", 'wea': "Clear" },
+            { 'city': "Kolhapur", 'temp': "27℃", 'wea': "Rainny" },
+            { 'city': "Amalner", 'temp': "40℃", 'wea': "Clear" },
+            { 'city': "Thane", 'temp': "30℃", 'wea': "Cloudy" },
+            { 'city': "Sambhajinagar", 'temp': "39℃", 'wea': "Sunny" },
+        ];
+
+        document.getElementById("weatherForm").addEventListener('submit', function(event) {
+            event.preventDefault();
+            display();
+        });
+
+        function display() {
+            const Scity = document.getElementById("search").value.trim();
+            const material = CitySearch(Scity);
+            document.getElementById("weather").innerHTML = material;
+        }
+
+        function CitySearch(Scity) {
+            for (let i = 0; i < weather.length; i++) {
+                if (weather[i].city.toLowerCase() === Scity.toLowerCase()) {
+                    return `
+                        <div>
+                            <h2>${weather[i].temp}</h2>
+                            <h4>${weather[i].wea}</h4>
+                        </div>`;
+                }
+            }
+            return "<div>City not found.</div>";
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <main>
+        <div class="row" style="text-align: center;">
+            <form id="weatherForm">
+                <!-- <input type="text" id="search" placeholder="Search by city name"> -->
+                <input type="text" id="search" name="search" placeholder="search">
+                <button type="submit" id="but">Search</button>
+            </form>
+        </div>
+        <div class="row" id="weather"> 
+            <!-- <div>
+                <img src="https://openweathermap.org/img/wn/04n@2x.png" alt=""> 
+            </div>
+            <div>
+                <h2>32 ℃</h2>
+                <h4> Clear </h4>
+            </div>   -->
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html> 

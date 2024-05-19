@@ -244,7 +244,15 @@ const arr = [
         'f3': '26 repo',
         'r1': 'HTML',
         'r2': 'CSS',
-        'r3': 'JS'
+        'r3': 'JS',
+        'r4': 'HTML',
+        'r5': 'CSS',
+        'r6': 'JS',
+        'r7': 'HTML',
+        'r8': 'CSS',
+        'r9': 'JS',
+        'r10': 'HTML',
+        'r11': 'JS'
     },
     {
         'user_name': 'Prashant',
@@ -298,9 +306,19 @@ function getrepo(username) {
 }
 
 // Event listener for form submission
-document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-    displayUser(); // Call the function to display user information
+    let submit =  document.getElementById('form').addEventListener('submit', function(event) 
+    {
+        // event.preventDefault(); // Prevent the default form submission behavior
+        // displayUser(); // Call the function to display user information
+        if(submit)
+            { 
+                event.preventDefault(); // Prevent the default form submission behavior
+                displayUser(); // Call the function to display user information
+            }
+            else
+            {
+                document.getElementById("main").innerHTML.hidden;
+            }
 });
 
 
