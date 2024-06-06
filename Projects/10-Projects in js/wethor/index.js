@@ -9,54 +9,63 @@ const weather =
     {
         'city' : "Bhusawal",
         // image : "",
+        'image' : "image1.png",
         'temp' : "43℃",
         'wea' : "Sunny"
     },
     {
         'city' : "Dhule",
         // image : "",
+        'image' : "image1.png",
         'temp' : "41℃",
         'wea' : "Sunny"
     },
     {
         'city' : "Nashik",
         // image : "",
+        'image' : "image1.png",
         'temp' : "37℃",
         'wea' : "Cloudy"
     },
     {
         'city' : "Nandurbar",
         // image : "",
+        'image' : "image1.png",
         'temp' : "40℃",
         'wea' : "Clear"
     },
     {
         'city' : "Mumbai",
         // image : "",
+        'image' : "image1.png",
         'temp' : "30℃",
         'wea' : "Clear"
     },
     {
         'city' : "Kolhapur",
         // image : "",
+        'image' : "image1.png",
         'temp' : "27℃",
         'wea' : "Rainny"
     },
     {
         'city' : "Amalner",
         // image : "",
+        'image' : "image1.png",
         'temp' : "40℃",
         'wea' : "Clear"
     },
     {
         'city' : "Thane",
         // image : "",
+        'image' : "image1.png",
         'temp' : "30℃",
         'wea' : "Cloudy"
     },
     {
         'city' : "Sambhajinagar",
         // image : "",
+        'image' : "image1.png",
         'temp' : "39℃",
         'wea' : "Sunny"
     },
