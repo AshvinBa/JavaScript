@@ -1,0 +1,334 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: Arial,sans-serif;
+    /* background-color:rgb(0, 0, 87); */
+}
+
+/* Intro Section */
+#Intro
+{
+    height: 350px;
+    background: url("./images/pexels-sam-nam-491996-1204148.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border:1px solid black; */
+}
+#Intro #logo
+{
+    background-color: white;
+    border: 2px solid black;
+    position: relative;
+    top:75px;
+    border-radius:100px;
+}
+
+#Intro #logo img
+{
+    height: 150px;
+}
+
+/* Contact Container */
+#contact-container
+{
+  /* border:1px solid red; */
+}
+
+#contact-container #contact
+{
+    padding-top: 103px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#contact h1
+{
+    padding:10px 0px;
+    font-size: 35px;
+    /* color:white; */
+}
+
+.font
+{
+    font-weight:normal;
+    padding: 1px 0px;
+    color: grey
+}
+
+#contact-container #contact .wrapper
+{
+    display: flex;
+    padding-top: 10px;
+}
+
+#contact .wrapper .box,#Mail #mobile
+{
+    height: 50px;
+    width:50px;
+    margin:10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #141E30 0%, #243B55  51%, #141E30  100%);
+}
+
+#contact .wrapper .box svg
+{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+/* About Section */
+
+#about-container
+{
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   /* border:1px solid green; */
+}
+
+#about
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px 20px;
+   background-color: aliceblue;
+   border-radius: 23px;
+   width: 800px;
+   /* width: 80%; */
+}
+#about h1
+{
+   padding-top: 10px;
+   padding-bottom: 20px;
+   font-size: 35px; 
+}
+#about .description
+{
+    font-size: 17px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Mail Section */
+
+#Mail-container
+{
+  /* border:1px solid blue; */
+}
+
+#Mail-container,#gallery-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#Mail 
+{
+    background-color: aliceblue;
+    border-radius: 23px;
+    width: 800px;
+    /* width:80%; */
+    padding: 20px 20px;
+}
+
+#Mail .mail-group
+{
+    padding: 10px 20px;
+}
+
+#Mail .mail-group .Topic
+{
+   font-size: 19px;
+}
+
+#Mail .mail-group .subtopic
+{
+   color:grey;
+   font-size: 14px;
+}
+
+#Mail #mail-group-1
+{
+   display: flex;
+   gap:10px;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+#Mail #mobile svg
+{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+#Mail .mail-group .btn
+{
+   font-size: 18px;
+   padding: 5px 13px;
+   border: none;
+   border-radius: 30px;
+   background-color:rgb(0, 0, 87);
+   display: flex;
+   flex-direction: row;
+   gap:1px;
+   align-content: baseline;
+   color:white;
+   cursor: pointer;
+}
+
+#Mail .mail-group .btn:hover
+{
+    background-color:rgb(0, 18, 122);
+    border: 1px solid rgb(0, 0, 87);
+}
+
+#Mail .mail-group .btn svg
+{
+   -webkit-filter: invert(100%);
+    filter: invert(100%);
+    height: 20px;
+}
+
+
+/* gallery Section */
+
+.img-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  /* border:1px solid darkorchid; */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    background-color: aliceblue;
+    width: 800px;
+    /* width: 80%; */
+    padding: 40px 20px;
+    padding-top: 20px;
+    border-radius: 50px;
+  }
+
+  #Heading
+  {
+     font-size: 17px;
+  }
+
+  .gallery .photos
+  {
+    display: flex;
+    justify-content: center;
+    gap:40px;
+  }
+  
+  .gallery a {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gallery img {
+    width: 350px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.777);
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  .lightbox {
+    display: none;
+  }
+  
+  .lightbox:target {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Footer */
+footer
+{
+    padding-top: 0px;
+    padding-bottom: 30px;
+    font-size: 17px;
+    text-align: center;
+    color: grey;
+}
+
+@media all and (max-width: 870px) {
+    /* body{
+      background-color:#243B55;
+    } */
+     .gallery,#Mail,#about
+     {
+        width:80%;
+     }
+     .gallery .photos
+    {
+       flex-direction: column;
+    }
+    .gallery h2 u
+    {
+      font-size: 25px;
+    }
+     .gallery .photos img
+    {
+      width:80%;
+    }  
+
+
+    /* .gallery,.gallery img,#about
+    {
+       width: 80%; 
+       text-align: center;
+       height: auto;
+    }
+    #Mail
+    {
+      width: 80%;
+    }   */
+}

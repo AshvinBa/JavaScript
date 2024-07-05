@@ -1,0 +1,335 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+.intro
+{
+    height: 350px;
+    width: 100%;
+    background: url("./Buissness_Card/images/download.jpg") no-repeat top/cover;
+    border: solid 0.2px black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.intro .logo #logo
+{
+    background-color: white;
+    border: 2px solid black;
+    position: relative;
+    top:75px;
+    border-radius:300px;
+    box-shadow: 2px 10px 10px 1px gray;
+}
+
+.Section-2 .introduction
+{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+
+.intro .logo #logo
+{
+    height: 180px;
+}
+
+@media all and (max-width: 200px)
+{
+    .intro .logo #logo
+    {
+        width: 50%;
+        height: auto;
+        display: flex;
+        /* align-items: center; */
+/*        justify-content: center;
+    }
+}
+
+@media all and (max-width: 500px)
+{
+    .intro .logo #logo
+    {
+        width: 50%;
+        height: auto;
+        display: flex;
+        /* align-items: center; */
+/*        justify-content: center;
+    }
+} */
+
+
+/* Resetting margin and padding for all elements to ensure consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the introductory section */
+.intro {
+    height: 350px;
+    width: 100%;
+    background: url("./Buissness_Card/images/download.jpg") no-repeat top/cover;
+    border: solid 0.2px black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Styling for the logo within the introductory section */
+.intro .logo #logo {
+    background-color: white;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 75px;
+    border-radius: 300px;
+    box-shadow: 2px 10px 10px 1px gray;
+    height: 180px;
+    width: 180px;
+}
+
+/* Styling for the second section containing the introduction */
+.Section-2 .introduction {
+    padding: 10px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+
+.logos
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.introduction h1
+{
+    padding: 5px;
+}
+
+.introduction p
+{
+    padding: 5px;
+}
+
+.logos
+{
+    padding: 5px;
+}
+
+.box
+{
+    padding: 10px;
+}
+
+.about-section
+{
+    height: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    display: wrap;
+}
+
+.about-me
+{
+    padding: 10px;
+    height: auto;
+    width: 40%;
+    background-color: rgb(214, 235, 244);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.about-me h1
+{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.contact-block
+{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width: 95%;
+    /* flex-direction: column; */
+    /* border: 0.2px solid black; */
+}
+
+.contact-us
+{
+    display: flex;
+    flex-direction: column;
+    /* float: left;  */
+    display: wrap;
+    padding: 20px;
+    height: auto;
+    width: 41%;
+    background-color: rgb(214, 235, 244);
+    border-radius: 5px;
+
+}
+
+.contact-us h4
+{
+    font-weight: 300;
+    margin: 5px;
+}
+
+#cont{
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.list_of_contact
+{
+    display: flex;
+    flex-direction: column;
+    /* border: 0.2px solid black; */
+}
+
+#call , #mail , #add
+{
+    /* font-size: 15px; */
+    margin-top: 10px;
+}
+
+#num , #email , #address
+{
+    font-size: 15px;
+    color: gray;
+}
+
+.direction
+{
+    width: 70px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: navy;
+    color: white;
+}
+
+.button{
+    padding: 10px;
+}
+
+.other-services
+{
+    width: 96%;
+    padding: 20px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.services
+{
+    width: 40%;
+    display: wrap;
+    padding: 20px;
+    /* border: 0.2px solid black; */
+    background-color: rgb(214, 235, 244);
+    border-radius: 10px;
+}
+
+#ser
+{
+    margin: 10px;
+    /* margin-top: 10px; */
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+#s1
+{
+    width: 50%;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 5px gray;
+}
+
+#last
+{
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive styling for screens with a max-width of 600px */
+@media all and (max-width: 600px) {
+    /* Reducing the height of the introductory section for smaller screens */
+    .intro {
+        height: 250px;
+    }
+
+    /* Reducing the size of the logo for smaller screens */
+    .intro .logo #logo {
+        height: 100px;
+        width: 100px;
+        top: 50px;
+    }
+
+    /* Reducing the padding for the second section to fit smaller screens */
+    .Section-2 .introduction {
+        padding-top: 50px;
+    }
+
+    /* Adjusting font sizes for smaller screens */
+    .Section-2 .introduction h1 {
+        font-size: 1.5em;
+    }
+
+    .Section-2 .introduction p {
+        font-size: 1em;
+    }
+    .box{
+        padding: 5px;
+    }
+    .about-me
+    {
+        width: auto;
+        height: auto;
+    }
+    .contact-block
+    {
+        padding: 20px 0px;
+        width: 100%;
+    }
+    .contact-us
+    {
+        width: 100%;
+    }
+    .other-services
+    {
+        width: 100%;
+        padding: 0px;
+    }
+    .services
+    {
+        width: 100%;
+    }
+
+}
